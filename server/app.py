@@ -4,6 +4,7 @@ import torch
 import re
 from transformers import GPT2LMHeadModel, GPT2TokenizerFast
 from collections import OrderedDict
+import numpy as np
 
 app = Flask(__name__)
 CORS(app)
@@ -47,8 +48,10 @@ class GPT2PPL:
             ppl = self.getPPL(line)
             Perplexity_per_line.append(ppl)
 
-        results["Perplexity per line"] = sum(Perplexity_per_line) / len(Perplexity_per_line)
-        results["Burstiness"] = max(Perplexity_per_line)
+        # results["Perplexity per line"] = sum(Perplexity_per_line) / len(Perplexity_per_line)
+        results["Perplexity per line"] = np.mean(Perplexity_per_line)
+        # results["Burstiness"] = max(Perplexity_per_line)
+        results["Burstiness"] = np.std(Perplexity_per_line)
         out, label = self.getResults(results["Perplexity per line"])
         results["label"] = label
         return results, out
