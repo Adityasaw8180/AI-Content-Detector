@@ -365,3 +365,25 @@ section {
 .bi{
   color: #4133B7;
 }
+
+/* Navbar */
+.navbar {
+  background: #f4f6ff;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  padding: 15px 20px;
+}
+
+.navbar-brand {
+  font-weight: 800;
+  font-size: 1.25rem;
+  color: #6558d3;
+  transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+  color: #4133b7;
+}
+
+.bi-robot {
+  color: #6558d3;
+}
