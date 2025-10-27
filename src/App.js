@@ -1,17 +1,26 @@
 import './App.css';
-import CardBody from './Components/CardBody';
-import Footer from './Components/Footer';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './Components/Navbar';
-import 'bootstrap/dist/css/bootstrap.min.css'
-
+import Footer from './Components/Footer';
+import CardBody from './Components/CardBody';
+import AboutUs from './Components/AboutUs'; // ✅ Import AboutUs
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <CardBody />
-      <Footer />
-    </div>
+    <Router>
+      <div className="App">
+        <Navbar />
+        <Routes>
+          {/* Home route */}
+          <Route path="/" element={<CardBody />} />
+
+          {/* About Us route */}
+          <Route path="/about" element={<AboutUs />} />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
