@@ -573,7 +573,7 @@ const CardBody = () => {
                         {/* Placeholder/Extra Info Card */}
                         <div className="info-card span-sm-2">
                             <p className="text-sm">
-                                **Perplexity** measures how well a language model predicts a sample of text. **Lower scores** indicate text that is more predictable (often AI-generated). **Burstiness** reflects the variation in perplexity across the text.
+                                <b>Perplexity</b> measures how well a language model predicts a sample of text. <b>Lower</b> scores indicate text that is more predictable (often AI-generated). <b>Burstiness</b> reflects the variation in perplexity across the text.
                             </p>
                         </div>
                     </div>
