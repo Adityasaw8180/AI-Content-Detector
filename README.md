@@ -51,6 +51,7 @@ This project uses **React.js** for the frontend and **Flask (Python)** for the b
 ---
 
 ## 📁 Project Structure
+```
 📦 GENERATIVE-AI-DETECTION
 ├── 📁 .vscode
 │ └── settings.json
@@ -83,7 +84,7 @@ This project uses **React.js** for the frontend and **Flask (Python)** for the b
 ├── 🧩 package.json
 ├── 🧩 package-lock.json
 └── 📝 README.md
-
+```
 
 ---
 
