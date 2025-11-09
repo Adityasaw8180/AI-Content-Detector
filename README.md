@@ -60,7 +60,6 @@ This project uses **React.js** for the frontend and **Flask (Python)** for the b
 │   ├── 🖼️ aboutUs.png
 │   ├── 🖼️ AI-text-output.png
 │   └── 🖼️ Human-text-output.png
-├── 🖼️ HomePage.jpg
 ├── 📁 node_modules
 ├── 📁 public
 │ └── index.html
